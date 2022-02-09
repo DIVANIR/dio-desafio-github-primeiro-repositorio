@@ -82,17 +82,22 @@ aside{
     text-align: center;
     padding: 5px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 #score{    
-    color: white000;
+    color: white;
 }
 
 .message_success{
     color: green;
+    border: 2px green solid;
+    border-radius: 5px;
 }
 .message_error{
     color: red;
+    border: 2px red solid;
+    border-radius: 5px;
 }
 
 button{
