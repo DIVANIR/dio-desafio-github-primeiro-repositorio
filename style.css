@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0,0,0);
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: "top_left top_right" "bottom_left bottom_right";
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+    width: 70vh;
+    height: 70vh;
+    max-height: 90vw;
+    max-width: 90vw;
+}
+
+.blue_light{
+    background-color: blue;
+    border-radius: 100% 0 0 0;
+    grid-area: top_left;
+    opacity: .2;
+}
+
+.yellow_light{
+    background-color: yellow;
+    border-radius: 0 100% 0 0;    
+    grid-area: top_right;
+    opacity: .2;
+}
+
+.red_light{
+    background-color: red;
+    border-radius: 0 0 0 100%;
+    grid-area: bottom_left;
+    opacity: .2;
+}
+
+.green_light{
+    background-color: green;
+    border-radius: 0 0 100% 0;
+    grid-area: bottom_right;
+    opacity: .2;
+}
+
+.blue_light_up{
+    opacity: 1;
+    box-shadow: blue 0 0 100px;
+}
+
+.yellow_light_up{
+    opacity: 1;
+    box-shadow: yellow 0 0 100px;
+}
+
+.red_light_up{
+    opacity: 1;
+    box-shadow: red 0 0 100px;
+}
+
+.green_light_up{
+    opacity: 1;
+    box-shadow: green 0 0 100px;
+}
+
+#score, #message{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#score{    
+    color: white000;
+}
+
+.message_success{
+    color: green;
+}
+.message_error{
+    color: red;
+}
+
+button{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 50px;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 2px green solid;
+    box-shadow: inset green 0px 0px 20px;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: green;
+    color: #fff;
+}
